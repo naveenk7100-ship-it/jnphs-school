@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery - JNPHS (Jawahar Nagar Pinion High School)</title>
+  <meta name="description" content="Explore official photo gallery of Jawahar Nagar Pinion High School (JNPHS) - Campus landmarks, smart classrooms, laboratories, sports, and cultural events.">
+  
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="shortcut icon" href="assets/logo.png">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Info Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-info">
+        <span><i class="fas fa-phone"></i> 040 2798 1051</span>
+        <span><i class="fas fa-envelope"></i> <a href="mailto:jnpschool@gmail.com" style="color: inherit; text-decoration: none;">jnpschool@gmail.com</a></span>
+        <span><i class="fas fa-map-marker-alt"></i> Marwadi Lane, Balaji Nagar, Jawahar Nagar Panchyati, Yapral Post, Shamirpet, Secunderabad – 500087</span>
+      </div>
+      <div class="top-bar-links">
+        <a href="admissions.html"><i class="fas fa-graduation-cap"></i> Admissions Open</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="navbar glass-nav">
+    <div class="container navbar-container">
+      <a href="index.html" class="nav-brand" title="JNPHS Home">
+        <img src="assets/logo.png" alt="JNPHS Official Logo" style="height: 52px; width: auto; object-fit: contain;">
+        <div class="brand-text">
+          <h1>JNPHS</h1>
+          <span>Jawahar Nagar Pinion High School</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="academics.html" class="nav-link">Academics</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+        <a href="faculty.html" class="nav-link">Faculty</a>
+        <a href="admissions.html" class="nav-link">Admissions</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
+        <a href="admissions.html" class="btn btn-gold" style="padding: 0.6rem 1.4rem; font-size: 0.85rem;">Apply Now</a>
+        <div class="hamburger"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="hero" style="min-height: 35vh;">
+    <div class="hero-overlay" style="background: linear-gradient(135deg, rgba(15, 44, 89, 0.95) 0%, rgba(11, 19, 43, 0.98) 100%);"></div>
+    <div class="container hero-content" style="text-align: center; max-width: 900px; margin: 0 auto;">
+      <h1 class="hero-title" style="font-size: 2.8rem;">JNPHS <span>Photo Gallery</span></h1>
+      <p class="hero-subtitle">Official photograph collection showcasing campus landmarks, academic wings, labs, and student life.</p>
+    </div>
+  </section>
+
+  <!-- Gallery Filter & Categories -->
+  <section class="padding-section container">
+    <div class="section-header">
+      <div class="section-badge">Official Collection</div>
+      <h2 class="section-title">Photo Albums</h2>
+      <p class="section-subtitle">Browse official JNPHS photographs across 5 dedicated school categories.</p>
+    </div>
+
+    <!-- Category Filter Bar -->
+    <div class="gallery-filters" style="display: flex; justify-content: center; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
+      <button class="filter-btn active" data-filter="all">All Photos</button>
+      <button class="filter-btn" data-filter="campus">Campus</button>
+      <button class="filter-btn" data-filter="classrooms">Classrooms</button>
+      <button class="filter-btn" data-filter="science-lab">Science Lab</button>
+      <button class="filter-btn" data-filter="sports">Sports</button>
+      <button class="filter-btn" data-filter="cultural-events">Cultural Events</button>
+    </div>
+
+    <!-- 5 Categories Album Showcase -->
+    <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+      
+      <!-- ════════ 1. CAMPUS ALBUM ════════ -->
+      <!-- Photo 1: Goddess Saraswathi Landmark -->
+      <div class="gallery-item glass-card" data-category="campus" style="padding: 0; overflow: hidden; border-radius: var(--radius-md); border: 2px solid var(--border-gold); cursor: pointer; transition: var(--transition); display: flex; flex-direction: column;">
+        <div style="height: 250px; background: rgba(15, 44, 89, 0.08); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; padding: 10px;">
+          <img src="images/photo-01-saraswathi.png" alt="Photo 1: Goddess Saraswathi Landmark" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: 4px; transition: transform 0.3s ease;">
+          <div style="position: absolute; top: 10px; right: 10px; background: rgba(15,44,89,0.9); color: var(--gold); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; border: 1px solid var(--border-gold); z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+            Photo 1 • Campus
+          </div>
+        </div>
+        <div style="padding: 1.2rem 1.4rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid rgba(212, 175, 55, 0.15);">
+          <h4 style="font-size: 1.15rem; color: var(--primary); margin-bottom: 0.3rem; font-weight: 700;">Goddess Saraswathi Landmark</h4>
+          <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; margin: 0;">Campus Entrance Landmark Shrine (ESTD 1997)</p>
+        </div>
+      </div>
+
+      <!-- Photo 5: SSC Results Honor Board -->
+      <div class="gallery-item glass-card" data-category="campus" style="padding: 0; overflow: hidden; border-radius: var(--radius-md); border: 2px solid var(--border-gold); cursor: pointer; transition: var(--transition); display: flex; flex-direction: column;">
+        <div style="height: 250px; background: rgba(15, 44, 89, 0.08); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; padding: 10px;">
+          <img src="images/photo-05-ssc-results.jpg" alt="Photo 5: SSC Results Since Inception Board" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: 4px; transition: transform 0.3s ease;">
+          <div style="position: absolute; top: 10px; right: 10px; background: rgba(15,44,89,0.9); color: var(--gold); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; border: 1px solid var(--border-gold); z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+            Photo 5 • Campus
+          </div>
+        </div>
+        <div style="padding: 1.2rem 1.4rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid rgba(212, 175, 55, 0.15);">
+          <h4 style="font-size: 1.15rem; color: var(--primary); margin-bottom: 0.3rem; font-weight: 700;">SSC Results Honor Board</h4>
+          <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; margin: 0;">21 Consecutive 100% Pass Batches (2004–2025)</p>
+        </div>
+      </div>
+
+      <!-- Photo 9: Trishul Architectural Wing -->
+      <div class="gallery-item glass-card" data-category="campus" style="padding: 0; overflow: hidden; border-radius: var(--radius-md); border: 2px solid var(--border-gold); cursor: pointer; transition: var(--transition); display: flex; flex-direction: column;">
+        <div style="height: 250px; background: rgba(15, 44, 89, 0.08); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; padding: 10px;">
+          <img src="images/photo-09-campus-trishul.png" alt="Photo 9: Campus Architecture & Trishul Feature" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: 4px; transition: transform 0.3s ease;">
+          <div style="position: absolute; top: 10px; right: 10px; background: rgba(15,44,89,0.9); color: var(--gold); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; border: 1px solid var(--border-gold); z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+            Photo 9 • Campus
+          </div>
+        </div>
+        <div style="padding: 1.2rem 1.4rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid rgba(212, 175, 55, 0.15);">
+          <h4 style="font-size: 1.15rem; color: var(--primary); margin-bottom: 0.3rem; font-weight: 700;">Trishul Architectural Wing</h4>
+          <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; margin: 0;">Campus Architectural Heritage & Cultural Pillar</p>
+        </div>
+      </div>
+
+      <!-- Photo 15: JNPHS Founder Directors -->
+      <div class="gallery-item glass-card" data-category="campus" style="padding: 0; overflow: hidden; border-radius: var(--radius-md); border: 2px solid var(--border-gold); cursor: pointer; transition: var(--transition); display: flex; flex-direction: column;">
+        <div style="height: 250px; background: rgba(15, 44, 89, 0.08); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; padding: 10px;">
+          <img src="images/photo-15-founder-directors.jpg" alt="Photo 15: JNPHS Founder Directors" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: 4px; transition: transform 0.3s ease;">
+          <div style="position: absolute; top: 10px; right: 10px; background: rgba(15,44,89,0.9); color: var(--gold); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; border: 1px solid var(--border-gold); z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+            Photo 15 • Campus
+          </div>
+        </div>
+        <div style="padding: 1.2rem 1.4rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid rgba(212, 175, 55, 0.15);">
+          <h4 style="font-size: 1.15rem; color: var(--primary); margin-bottom: 0.3rem; font-weight: 700;">JNPHS Founder Directors</h4>
+          <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; margin: 0;">Visionary Leadership & Management Board</p>
+        </div>
+      </div>
+
+      <!-- Photo 17: Campus Building & Kalavedika Facade -->
+      <div class="gallery-item glass-card" data-category="campus" style="padding: 0; overflow: hidden; border-radius: var(--radius-md); border: 2px solid var(--border-gold); cursor: pointer; transition: var(--transition); display: flex; flex-direction: column;">
+        <div style="height: 250px; background: rgba(15, 44, 89, 0.08); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; padding: 10px;">
+          <img src="images/photo-17-campus-building-facade.jpg" alt="Photo 17: JNPHS School Building & Kalavedika Wing Facade" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: 4px; transition: transform 0.3s ease;">
+          <div style="position: absolute; top: 10px; right: 10px; background: rgba(15,44,89,0.9); color: var(--gold); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; border: 1px solid var(--border-gold); z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+            Photo 17 • Campus
+          </div>
+        </div>
+        <div style="padding: 1.2rem 1.4rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid rgba(212, 175, 55, 0.15);">
+          <h4 style="font-size: 1.15rem; color: var(--primary); margin-bottom: 0.3rem; font-weight: 700;">Campus Building & Kalavedika Facade</h4>
+          <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; margin: 0;">Main Multi-Storey School Building & Courtyard</p>
+        </div>
+      </div>
+
+      <!-- Photo 18: Traditional Motto Monument -->
+      <div class="gallery-item glass-card" data-category="campus" style="padding: 0; overflow: hidden; border-radius: var(--radius-md); border: 2px solid var(--border-gold); cursor: pointer; transition: var(--transition); display: flex; flex-direction: column;">
+        <div style="height: 250px; background: rgba(15, 44, 89, 0.08); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; padding: 10px;">
+          <img src="images/photo-18-motto-management-wall.jpg" alt="Photo 18: Campus Traditional Motto Arch & Management Wall" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: 4px; transition: transform 0.3s ease;">
+          <div style="position: absolute; top: 10px; right: 10px; background: rgba(15,44,89,0.9); color: var(--gold); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; border: 1px solid var(--border-gold); z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+            Photo 18 • Campus
+          </div>
+        </div>
+        <div style="padding: 1.2rem 1.4rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid rgba(212, 175, 55, 0.15);">
+          <h4 style="font-size: 1.15rem; color: var(--primary); margin-bottom: 0.3rem; font-weight: 700;">Traditional Motto Monument</h4>
+          <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; margin: 0;">“అఖండ విద్యాప్రాప్తిరస్తు” — JNPHS Management Gate</p>
+        </div>
+      </div>
+
+      <!-- Photo 20: School Morning Assembly -->
+      <div class="gallery-item glass-card" data-category="campus" style="padding: 0; overflow: hidden; border-radius: var(--radius-md); border: 2px solid var(--border-gold); cursor: pointer; transition: var(--transition); display: flex; flex-direction: column;">
+        <div style="height: 250px; background: rgba(15, 44, 89, 0.08); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; padding: 10px;">
+          <img src="images/photo-20-morning-assembly.jpg" alt="Photo 20: Whole School Morning Assembly & Student Strength" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: 4px; transition: transform 0.3s ease;">
+          <div style="position: absolute; top: 10px; right: 10px; background: rgba(15,44,89,0.9); color: var(--gold); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; border: 1px solid var(--border-gold); z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+            Photo 20 • Campus
+          </div>
+        </div>
+        <div style="padding: 1.2rem 1.4rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid rgba(212, 175, 55, 0.15);">
+          <h4 style="font-size: 1.15rem; color: var(--primary); margin-bottom: 0.3rem; font-weight: 700;">School Morning Assembly</h4>
+          <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; margin: 0;">1000+ Students Disciplined Morning Gathering</p>
+        </div>
+      </div>
+
+      <!-- Photo 21: Primary Wing & Pencil Canopy -->
+      <div class="gallery-item glass-card" data-category="campus" style="padding: 0; overflow: hidden; border-radius: var(--radius-md); border: 2px solid var(--border-gold); cursor: pointer; transition: var(--transition); display: flex; flex-direction: column;">
+        <div style="height: 250px; background: rgba(15, 44, 89, 0.08); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; padding: 10px;">
+          <img src="images/photo-21-primary-wing-pencil-canopy.jpg" alt="Photo 21: Primary Wing & Motto Pencil Canopy" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: 4px; transition: transform 0.3s ease;">
+          <div style="position: absolute; top: 10px; right: 10px; background: rgba(15,44,89,0.9); color: var(--gold); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; border: 1px solid var(--border-gold); z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+            Photo 21 • Campus
+          </div>
+        </div>
+        <div style="padding: 1.2rem 1.4rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid rgba(212, 175, 55, 0.15);">
+          <h4 style="font-size: 1.15rem; color: var(--primary); margin-bottom: 0.3rem; font-weight: 700;">Primary Wing & Pencil Canopy</h4>
+          <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; margin: 0;">“Come to Learn - Go to Serve” Pre-Primary Block</p>
+        </div>
+      </div>
+
+      <!-- ════════ 2. CLASSROOMS ALBUM ════════ -->
+      <!-- Photo 4: Classroom Study Session -->
+      <div class="gallery-item glass-card" data-category="classrooms" style="padding: 0; overflow: hidden; border-radius: var(--radius-md); border: 2px solid var(--border-gold); cursor: pointer; transition: var(--transition); display: flex; flex-direction: column;">
+        <div style="height: 250px; background: rgba(15, 44, 89, 0.08); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; padding: 10px;">
+          <img src="images/photo-04-classroom.png" alt="Photo 4: Smart Classroom Learning Session" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: 4px; transition: transform 0.3s ease;">
+          <div style="position: absolute; top: 10px; right: 10px; background: rgba(15,44,89,0.9); color: var(--gold); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; border: 1px solid var(--border-gold); z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+            Photo 4 • Classrooms
+          </div>
+        </div>
+        <div style="padding: 1.2rem 1.4rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid rgba(212, 175, 55, 0.15);">
+          <h4 style="font-size: 1.15rem; color: var(--primary); margin-bottom: 0.3rem; font-weight: 700;">Classroom Study Session</h4>
+          <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; margin: 0;">Interactive Learning & Regular Study Class</p>
+        </div>
+      </div>
+
+      <!-- Photo 6: Open-Air Study Pavilion -->
+      <div class="gallery-item glass-card" data-category="classrooms" style="padding: 0; overflow: hidden; border-radius: var(--radius-md); border: 2px solid var(--border-gold); cursor: pointer; transition: var(--transition); display: flex; flex-direction: column;">
+        <div style="height: 250px; background: rgba(15, 44, 89, 0.08); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; padding: 10px;">
+          <img src="images/photo-06-study-pavilion.png" alt="Photo 6: Open-Air Study Pavilion" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: 4px; transition: transform 0.3s ease;">
+          <div style="position: absolute; top: 10px; right: 10px; background: rgba(15,44,89,0.9); color: var(--gold); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; border: 1px solid var(--border-gold); z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+            Photo 6 • Classrooms
+          </div>
+        </div>
+        <div style="padding: 1.2rem 1.4rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid rgba(212, 175, 55, 0.15);">
+          <h4 style="font-size: 1.15rem; color: var(--primary); margin-bottom: 0.3rem; font-weight: 700;">Open-Air Study Pavilion</h4>
+          <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; margin: 0;">JNPHS Canopy Study Hall & Reading Space</p>
+        </div>
+      </div>
+
+      <!-- Photo 7: Digital Smart Classroom -->
+      <div class="gallery-item glass-card" data-category="classrooms" style="padding: 0; overflow: hidden; border-radius: var(--radius-md); border: 2px solid var(--border-gold); cursor: pointer; transition: var(--transition); display: flex; flex-direction: column;">
+        <div style="height: 250px; background: rgba(15, 44, 89, 0.08); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; padding: 10px;">
+          <img src="images/photo-07-smart-classroom.png" alt="Photo 7: Digital Interactive Smart Classroom" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: 4px; transition: transform 0.3s ease;">
+          <div style="position: absolute; top: 10px; right: 10px; background: rgba(15,44,89,0.9); color: var(--gold); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; border: 1px solid var(--border-gold); z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+            Photo 7 • Classrooms
+          </div>
+        </div>
+        <div style="padding: 1.2rem 1.4rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid rgba(212, 175, 55, 0.15);">
+          <h4 style="font-size: 1.15rem; color: var(--primary); margin-bottom: 0.3rem; font-weight: 700;">Digital Smart Classroom</h4>
+          <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; margin: 0;">Interactive Audio-Visual Teaching & IoT Board</p>
+        </div>
+      </div>
+
+      <!-- ════════ 3. SCIENCE LAB ALBUM ════════ -->
+      <!-- Photo 3: Computer Lab -->
+      <div class="gallery-item glass-card" data-category="science-lab" style="padding: 0; overflow: hidden; border-radius: var(--radius-md); border: 2px solid var(--border-gold); cursor: pointer; transition: var(--transition); display: flex; flex-direction: column;">
+        <div style="height: 250px; background: rgba(15, 44, 89, 0.08); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; padding: 10px;">
+          <img src="images/photo-03-computer-lab.png" alt="Photo 3: Computer & Science Lab Session" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: 4px; transition: transform 0.3s ease;">
+          <div style="position: absolute; top: 10px; right: 10px; background: rgba(15,44,89,0.9); color: var(--gold); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; border: 1px solid var(--border-gold); z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+            Photo 3 • Science Lab
+          </div>
+        </div>
+        <div style="padding: 1.2rem 1.4rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid rgba(212, 175, 55, 0.15);">
+          <h4 style="font-size: 1.15rem; color: var(--primary); margin-bottom: 0.3rem; font-weight: 700;">Computer & Digital Learning Lab</h4>
+          <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; margin: 0;">Practical IT & Computer Science Lab</p>
+        </div>
+      </div>
+
+      <!-- Photo 10: Atal Tinkering Lab -->
+      <div class="gallery-item glass-card" data-category="science-lab" style="padding: 0; overflow: hidden; border-radius: var(--radius-md); border: 2px solid var(--border-gold); cursor: pointer; transition: var(--transition); display: flex; flex-direction: column;">
+        <div style="height: 250px; background: rgba(15, 44, 89, 0.08); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; padding: 10px;">
+          <img src="images/photo-10-atal-tinkering-lab.png" alt="Photo 10: Atal Tinkering STEM & Innovation Lab" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: 4px; transition: transform 0.3s ease;">
+          <div style="position: absolute; top: 10px; right: 10px; background: rgba(15,44,89,0.9); color: var(--gold); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; border: 1px solid var(--border-gold); z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+            Photo 10 • Science Lab
+          </div>
+        </div>
+        <div style="padding: 1.2rem 1.4rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid rgba(212, 175, 55, 0.15);">
+          <h4 style="font-size: 1.15rem; color: var(--primary); margin-bottom: 0.3rem; font-weight: 700;">Atal Tinkering Lab (ATL)</h4>
+          <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; margin: 0;">Hands-on STEM, Robotics & Innovation Workshop</p>
+        </div>
+      </div>
+
+      <!-- Photo 14: Chemistry Lab -->
+      <div class="gallery-item glass-card" data-category="science-lab" style="padding: 0; overflow: hidden; border-radius: var(--radius-md); border: 2px solid var(--border-gold); cursor: pointer; transition: var(--transition); display: flex; flex-direction: column;">
+        <div style="height: 250px; background: rgba(15, 44, 89, 0.08); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; padding: 10px;">
+          <img src="images/photo-14-chemistry-science-lab.png" alt="Photo 14: Chemistry & Science Laboratory" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: 4px; transition: transform 0.3s ease;">
+          <div style="position: absolute; top: 10px; right: 10px; background: rgba(15,44,89,0.9); color: var(--gold); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; border: 1px solid var(--border-gold); z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+            Photo 14 • Science Lab
+          </div>
+        </div>
+        <div style="padding: 1.2rem 1.4rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid rgba(212, 175, 55, 0.15);">
+          <h4 style="font-size: 1.15rem; color: var(--primary); margin-bottom: 0.3rem; font-weight: 700;">Chemistry & Science Laboratory</h4>
+          <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; margin: 0;">Practical Scientific Experiments & Demonstration</p>
+        </div>
+      </div>
+
+      <!-- Photo 19: STEM Robotics Project -->
+      <div class="gallery-item glass-card" data-category="science-lab" style="padding: 0; overflow: hidden; border-radius: var(--radius-md); border: 2px solid var(--border-gold); cursor: pointer; transition: var(--transition); display: flex; flex-direction: column;">
+        <div style="height: 250px; background: rgba(15, 44, 89, 0.08); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; padding: 10px;">
+          <img src="images/photo-19-stem-robotics-project.jpg" alt="Photo 19: Atal Tinkering Lab STEM Robotics Project" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: 4px; transition: transform 0.3s ease;">
+          <div style="position: absolute; top: 10px; right: 10px; background: rgba(15,44,89,0.9); color: var(--gold); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; border: 1px solid var(--border-gold); z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+            Photo 19 • Science Lab
+          </div>
+        </div>
+        <div style="padding: 1.2rem 1.4rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid rgba(212, 175, 55, 0.15);">
+          <h4 style="font-size: 1.15rem; color: var(--primary); margin-bottom: 0.3rem; font-weight: 700;">STEM Robotics Project</h4>
+          <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; margin: 0;">Student Humanoid Robotic Innovation & Engineering</p>
+        </div>
+      </div>
+
+      <!-- ════════ 4. SPORTS ALBUM ════════ -->
+      <!-- Photo 12: Yoga & Meditation Wellness -->
+      <div class="gallery-item glass-card" data-category="sports" style="padding: 0; overflow: hidden; border-radius: var(--radius-md); border: 2px solid var(--border-gold); cursor: pointer; transition: var(--transition); display: flex; flex-direction: column;">
+        <div style="height: 250px; background: rgba(15, 44, 89, 0.08); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; padding: 10px;">
+          <img src="images/photo-12-yoga-sports.jpg" alt="Photo 12: Yoga, Meditation & Physical Fitness" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: 4px; transition: transform 0.3s ease;">
+          <div style="position: absolute; top: 10px; right: 10px; background: rgba(15,44,89,0.9); color: var(--gold); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; border: 1px solid var(--border-gold); z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+            Photo 12 • Sports
+          </div>
+        </div>
+        <div style="padding: 1.2rem 1.4rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid rgba(212, 175, 55, 0.15);">
+          <h4 style="font-size: 1.15rem; color: var(--primary); margin-bottom: 0.3rem; font-weight: 700;">Yoga & Meditation Wellness</h4>
+          <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; margin: 0;">Mindfulness, Fitness & Physical Education Sessions</p>
+        </div>
+      </div>
+
+      <!-- Photo 13: Indoor Games & Chess Club -->
+      <div class="gallery-item glass-card" data-category="sports" style="padding: 0; overflow: hidden; border-radius: var(--radius-md); border: 2px solid var(--border-gold); cursor: pointer; transition: var(--transition); display: flex; flex-direction: column;">
+        <div style="height: 250px; background: rgba(15, 44, 89, 0.08); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; padding: 10px;">
+          <img src="images/photo-13-indoor-games-chess.png" alt="Photo 13: Indoor Games, Chess & Mind Sports" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: 4px; transition: transform 0.3s ease;">
+          <div style="position: absolute; top: 10px; right: 10px; background: rgba(15,44,89,0.9); color: var(--gold); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; border: 1px solid var(--border-gold); z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+            Photo 13 • Sports
+          </div>
+        </div>
+        <div style="padding: 1.2rem 1.4rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid rgba(212, 175, 55, 0.15);">
+          <h4 style="font-size: 1.15rem; color: var(--primary); margin-bottom: 0.3rem; font-weight: 700;">Indoor Games & Chess Club</h4>
+          <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; margin: 0;">Chess, Carrom & Strategic Thinking Recreation</p>
+        </div>
+      </div>
+
+      <!-- ════════ 5. CULTURAL EVENTS ALBUM ════════ -->
+      <!-- Photo 8: Kalavedika Cultural Stage -->
+      <div class="gallery-item glass-card" data-category="cultural-events" style="padding: 0; overflow: hidden; border-radius: var(--radius-md); border: 2px solid var(--border-gold); cursor: pointer; transition: var(--transition); display: flex; flex-direction: column;">
+        <div style="height: 250px; background: rgba(15, 44, 89, 0.08); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; padding: 10px;">
+          <img src="images/photo-08-kalavedika-stage.png" alt="Photo 8: Kalavedika Cultural Stage & Auditorium" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: 4px; transition: transform 0.3s ease;">
+          <div style="position: absolute; top: 10px; right: 10px; background: rgba(15,44,89,0.9); color: var(--gold); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; border: 1px solid var(--border-gold); z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+            Photo 8 • Cultural Events
+          </div>
+        </div>
+        <div style="padding: 1.2rem 1.4rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid rgba(212, 175, 55, 0.15);">
+          <h4 style="font-size: 1.15rem; color: var(--primary); margin-bottom: 0.3rem; font-weight: 700;">Kalavedika Cultural Stage</h4>
+          <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; margin: 0;">Open-Air Cultural Stage & Campus Auditorium</p>
+        </div>
+      </div>
+
+      <!-- Photo 11: Dedicated Teaching Faculty -->
+      <div class="gallery-item glass-card" data-category="cultural-events" style="padding: 0; overflow: hidden; border-radius: var(--radius-md); border: 2px solid var(--border-gold); cursor: pointer; transition: var(--transition); display: flex; flex-direction: column;">
+        <div style="height: 250px; background: rgba(15, 44, 89, 0.08); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; padding: 10px;">
+          <img src="images/photo-11-teaching-faculty.jpg" alt="Photo 11: Dedicated Teaching & Educator Staff" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: 4px; transition: transform 0.3s ease;">
+          <div style="position: absolute; top: 10px; right: 10px; background: rgba(15,44,89,0.9); color: var(--gold); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; border: 1px solid var(--border-gold); z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+            Photo 11 • Cultural Events
+          </div>
+        </div>
+        <div style="padding: 1.2rem 1.4rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid rgba(212, 175, 55, 0.15);">
+          <h4 style="font-size: 1.15rem; color: var(--primary); margin-bottom: 0.3rem; font-weight: 700;">Dedicated Teaching Faculty</h4>
+          <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; margin: 0;">Faculty Celebration & Cultural Gathering on Stage</p>
+        </div>
+      </div>
+
+      <!-- Photo 16: Male Faculty & Staff Team -->
+      <div class="gallery-item glass-card" data-category="cultural-events" style="padding: 0; overflow: hidden; border-radius: var(--radius-md); border: 2px solid var(--border-gold); cursor: pointer; transition: var(--transition); display: flex; flex-direction: column;">
+        <div style="height: 250px; background: rgba(15, 44, 89, 0.08); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; padding: 10px;">
+          <img src="images/photo-16-male-faculty.jpg" alt="Photo 16: JNPHS Male Faculty & Staff" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: 4px; transition: transform 0.3s ease;">
+          <div style="position: absolute; top: 10px; right: 10px; background: rgba(15,44,89,0.9); color: var(--gold); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; border: 1px solid var(--border-gold); z-index: 2; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+            Photo 16 • Cultural Events
+          </div>
+        </div>
+        <div style="padding: 1.2rem 1.4rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid rgba(212, 175, 55, 0.15);">
+          <h4 style="font-size: 1.15rem; color: var(--primary); margin-bottom: 0.3rem; font-weight: 700;">Male Faculty & Staff Team</h4>
+          <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; margin: 0;">Dedicated Subject Educators & Academic Staff</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <span class="lightbox-close">&times;</span>
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="JNPHS Gallery Preview" class="lightbox-img">
+      <div class="lightbox-caption"></div>
+      <div class="lightbox-nav lightbox-prev"><i class="fas fa-chevron-left"></i></div>
+      <div class="lightbox-nav lightbox-next"><i class="fas fa-chevron-right"></i></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="nav-brand" style="margin-bottom: 1.2rem; display: flex; align-items: center; gap: 1rem;">
+          <img src="assets/logo.png" alt="JNPHS Official Logo" style="height: 50px; width: auto; object-fit: contain;">
+          <div class="brand-text"><h1 style="color: #FFF;">JNPHS</h1><span>Jawahar Nagar Pinion High School</span></div>
+        </a>
+        <p style="font-size: 0.95rem;">Motto: "Come to Learn, Go to Serve".</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Mandatory Contact</h4>
+        <p style="font-size: 0.85rem; margin-bottom: 0.5rem;"><strong style="color: var(--gold);">Address:</strong> Marwadi Lane, Balaji Nagar, Jawahar Nagar Panchyati, Yapral Post, Shamirpet, Secunderabad, Telangana – 500087</p>
+        <p style="font-size: 0.85rem; margin-bottom: 0.5rem;"><strong style="color: var(--gold);">Phone:</strong> 040 2798 1051</p>
+        <p style="font-size: 0.85rem;"><strong style="color: var(--gold);">Email:</strong> <a href="mailto:jnpschool@gmail.com" style="color: inherit; text-decoration: none;">jnpschool@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="container footer-bottom"><p>&copy; 2026 Jawahar Nagar Pinion High School (JNPHS). All Rights Reserved.</p></div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="js/script.js"></script>
+</body>
+</html>
