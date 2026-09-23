@@ -244,9 +244,9 @@ function initGalleryLightbox() {
    -------------------------------------------------------------------------- */
 function initFormValidation() {
   const contactForm = document.getElementById('contact-form');
-  const inquiryForm = document.getElementById('inquiry-form');
+  const inquiryForm = document.getElementById('inquiry-form') || document.getElementById('enquiry-form');
 
-  // Handle Admission Inquiry Form -> Open in Gmail Compose
+  // Handle Admission Enquiry Form -> Open in Gmail Compose
   if (inquiryForm) {
     inquiryForm.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -268,7 +268,7 @@ function initFormValidation() {
 
       const subjectText = 'JNPHS New Admission Enquiry';
 
-      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=jnpschool@gmail.com&su=${encodeURIComponent(subjectText)}&body=${encodeURIComponent(bodyText)}`;
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=jnphschool@gmail.com&su=${encodeURIComponent(subjectText)}&body=${encodeURIComponent(bodyText)}`;
 
       // Open Gmail compose in a new tab
       window.open(gmailUrl, '_blank');

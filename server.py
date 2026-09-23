@@ -4,7 +4,7 @@
 JNPHS (Jawahar Nagar Pinion High School) - Official Server & Email Relay
 ==============================================================================
 Serves static website files and handles form submissions via SMTP to:
-jnpschool@gmail.com
+jnphschool@gmail.com
 
 Usage:
   python server.py
@@ -14,9 +14,9 @@ Configuration:
   Reads SMTP settings from '.env' file or system environment variables:
   - SMTP_HOST (e.g. smtp.gmail.com)
   - SMTP_PORT (e.g. 587)
-  - SMTP_USER (e.g. jnpschool@gmail.com)
+  - SMTP_USER (e.g. jnphschool@gmail.com)
   - SMTP_PASS (e.g. your Gmail 16-character App Password)
-  - RECIPIENT_EMAIL (default: jnpschool@gmail.com)
+  - RECIPIENT_EMAIL (default: jnphschool@gmail.com)
   - PORT (default: 5500)
 ==============================================================================
 """
@@ -67,7 +67,7 @@ def get_smtp_config():
         'port': int(os.environ.get('SMTP_PORT', '587').strip() or '587'),
         'user': os.environ.get('SMTP_USER', '').strip(),
         'pass': os.environ.get('SMTP_PASS', '').strip(),
-        'recipient': os.environ.get('RECIPIENT_EMAIL', 'jnpschool@gmail.com').strip() or 'jnpschool@gmail.com',
+        'recipient': os.environ.get('RECIPIENT_EMAIL', 'jnphschool@gmail.com').strip() or 'jnphschool@gmail.com',
     }
 
 
@@ -160,7 +160,7 @@ class JNPHSRequestHandler(SimpleHTTPRequestHandler):
         self.end_headers()
 
     def handle_admissions(self):
-        """Process admissions form inquiry and send email via SMTP."""
+        """Process admissions form enquiry and send email via SMTP."""
         data, err = self.parse_json_body()
         if err:
             self.send_json_response(400, {'success': False, 'error': err})
