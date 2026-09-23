@@ -248,8 +248,16 @@ img {
   align-items: center;
 }
 
+.top-bar-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.2rem;
+}
+
 .top-bar-info span {
-  margin-right: 1.5rem;
+  display: inline-flex;
+  align-items: center;
 }
 
 .top-bar-info i {
@@ -1230,10 +1238,19 @@ textarea.form-control {
   /* Compact Top Bar on Mobile */
   .top-bar {
     padding: 0.35rem 0.5rem;
-    font-size: 0.8rem;
+    font-size: 0.78rem;
   }
-  .top-bar-info span:last-child {
-    display: none; /* Hide 4-line address from top sticky bar on mobile */
+  .top-bar-address {
+    display: none !important; /* Hide 4-line address from top sticky bar on mobile */
+  }
+  .top-bar-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem 0.6rem;
+  }
+  .top-bar-info span {
+    margin-right: 0;
   }
 
   /* Compact Navbar Header */
